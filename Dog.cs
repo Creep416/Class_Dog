@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Media;
+
+namespace Class_Dog
+{
+	internal class Dog
+	{
+		private string Dog_name;
+		public Dog(string n) { Dog_name = n; }
+		public string getDogName() { return Dog_name; }
+		public void Dog_gav(Stream sound_filename) 
+		{
+			SoundPlayer sp = new SoundPlayer();
+			sp.Stream = sound_filename;
+			sp.Load();
+			sp.Play();
+		}
+	}
+}
