@@ -1,3 +1,4 @@
+using Dog.Properties;
 namespace Class_Dog
 {
     public partial class Form1 : Form
@@ -14,8 +15,8 @@ namespace Class_Dog
 
         private void button1_Click(object sender, EventArgs e)
         {
-            System.Reflection.Assembly a = System.Reflection.Assembly.GetExecutingAssembly();
-            barbos.Dog_gav(a.GetManifestResourceStream("Dog.dog.wav"));
+            barbos.Dog_gav(Resources.dog);
+            pictureBoxDog.Image = Resources.dogdance;
         }
     }
 }

@@ -72,6 +72,16 @@ namespace Dog.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dogdance {
+            get {
+                object obj = ResourceManager.GetObject("dogdance", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap No_Dogs {
             get {
                 object obj = ResourceManager.GetObject("No_Dogs", resourceCulture);
